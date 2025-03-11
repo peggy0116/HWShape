@@ -6,10 +6,10 @@ Shape myTriangle = new Triangle(30, 10.2);
 Shape myTrapeZoid = new TrapeZoid(3.8, 10, 5);
 Shape maxShape = mycircle;
 
-if (myTriangle.area > maxShape.area)
+if (myTriangle.CompareTo(maxShape) > 0)
     maxShape = myTriangle;
 
-if (myTrapeZoid.area > maxShape.area)
+if (myTrapeZoid.CompareTo(maxShape) > 0)
     maxShape = myTrapeZoid;
 Console.WriteLine("圓形的面積 " + mycircle.area.ToString());
 Console.WriteLine("三角形的面積 " + myTriangle.area.ToString());
